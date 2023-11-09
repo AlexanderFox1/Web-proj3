@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Starting Page -->
+    <div id="startingPage" class="container text-center mt-5">
+        <h1>Welcome to the Quiz App</h1>
+        <form id="startForm" class="mt-4">
+            <div class="form-group">
+                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Start Quiz</button>
+        </form>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" style="display: none;">
+        <div class="container text-center mt-5">
+            <h2>Quiz Title</h2>
+            <div id="questionsContainer" class="mt-4">
+                
+            </div>
+            <div id="feedbackView" style="display: none;"></div>
+            <div id="feedbackMessage" style="display: none;"></div>
+            <button id="submitQuiz" class="btn btn-primary mt-3">Submit Quiz</button>
+        </div>
+    </div>
+
+   
+    <div id="finalResult" style="display: none;"></div>
+
+    <!-- Handlebars Template -->
+    <script id="questions-template" type="text/x-handlebars-template">
+        {{#each questions}}
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">{{question}}</h5>
+                {{#ifCond type '===' 'Multiple Choice'}}
+                {{#each choices}}
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="answer" id="{{@index}}" value="{{this}}">
+                    <label class="form-check-label" for="{{@index}}">
+                        {{this}}
+                    </label>
+                </div>
+                {{/each}}
+                {{else ifCond type '===' 'Narrative'}}
+                <textarea class="form-control" id="narrativeAnswer" rows="3" placeholder="Type your answer"></textarea>
+                {{else ifCond type '===' 'Image Selection'}}
+                {{#each choices}}
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="answer" id="{{@index}}" value="{{this}}">
+                    <label class="form-check-label" for="{{@index}}">
+                        <img src="{{this}}" alt="Image option">
+                    </label>
+                </div>
+                {{/each}}
+                {{/ifCond}}
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
