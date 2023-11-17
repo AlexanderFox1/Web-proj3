@@ -118,10 +118,10 @@
         "id": "java_quiz_question11",
         "quizType":"Java Quiz",
         "questionType":"multiple_choice",
-        "questionText": "What would be the correct syntax for creating an object of the Ball class named basketball?",
-        "correctAnswer": "Ball basketball = new Ball();",
-        "options": ["new Ball(basketball);", "basketball = Object.create(Ball);", "Ball.newInstance(basketball);", "Ball basketball = new Ball();"],
-        "explanation": "To create an instance of a class in Java, the correct syntax is: ClassName name = new ClassName();. In this case, since the name of the object is \"basketball\" and the name of the class is \"Ball\" the correct syntax is Ball basketball = new Ball();"
+        "questionText": "What would be the correct syntax for creating an object of the sportball class named BowlingBall?",
+        "correctAnswer": "sportball bowlingball = new sportball();",
+        "options": ["new sportball(BowlingBall);", "BowlingBall = Object.create(sportball);", "sportball.BowlingBall);", "sportball BowlingBall = new sportball();"],
+        "explanation": "the correct syntax is: ClassName name = new ClassName();. since the name of the object is \"BowlingBall\" and the name of the class is \"sportball\" the correct syntax is Ball basketball = new Ball();"
     }
   ]
 }
