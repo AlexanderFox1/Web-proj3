@@ -122,7 +122,72 @@
         "correctAnswer": "sportball bowlingball = new sportball();",
         "options": ["new sportball(BowlingBall);", "BowlingBall = Object.create(sportball);", "sportball.BowlingBall);", "sportball BowlingBall = new sportball();"],
         "explanation": "the correct syntax is: ClassName name = new ClassName();. since the name of the object is \"BowlingBall\" and the name of the class is \"sportball\" the correct syntax is Ball basketball = new Ball();"
-    }
-  ]
+    },
+{
+
+    "id": "java_quiz_question12",
+    "quizType": "Java Quiz",
+    "questionType": "image_selection",
+    "questionText": "Which code block shown below will cause a compiler error? (Click the image that correctly answers the question.)",
+    "correctAnswer": "img_1",
+    "options": [
+        {
+            "id": "img_1",
+            "source": ""
+        }, 
+        {
+            "id": "img_2",
+            "source": ""
+        }
+    ],
+    "explanation": "The second image causes a runtime error. The first image's compiler won't be able to compile the code and will display a compiler error."
+},
+
+{
+    "id": "java_quiz_question13",
+    "quizType": "Java Quiz",
+    "questionType": "true_false",
+    "questionText": "To find the value of 7^22 you can use the method Math.power(7, 22).",
+    "correctAnswer": "False",
+    "options": ["True", "False"],
+    "explanation": "The method used for generating the value of a number raised to a certain power is Math.pow()."
+},
+
+{
+    "id": "java_quiz_question14",
+    "quizType": "Java Quiz",
+    "questionType": "text_input_one",
+    "questionText": "If your method does not return a value, it needs to have the ______ keyword in its method signature.",
+    "correctAnswer": "void",
+    "answerFieldId": "answer_to_question",
+    "explanation": "In Java, you have to have a return type in your method signature. If your method doesn't return a value, the return type will be \"void\"."
+},
+{
+"id": "java_quiz_question15",
+            "quizType": "Java Quiz",
+            "questionType": "text_input_one",
+            "questionText": "Write the import statement needed to use ArrayLists in Java. Be sure to end with a semicolon since it will mark wrong without it.",
+            "correctAnswer": "import java.util.ArrayList;",
+            "answerFieldId": "answer_to_question",
+            "explanation": "In order to use ArrayLists in Java, you need to import them from the java.util package."
+        }
+    ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
       

@@ -31,13 +31,13 @@
             <br>
             <form>
                 <div>
-                    <label>Enter Your Name:</label>
+                    <label>Enter Your Name please:</label>
                     <input type="text" placeholder="Name" id="user_name">
                 </div>
                 <br>
                 <div>
                     <button class="btn btn-primary block" id="java_quiz">Take Java Quiz 1</button>
-                    <button class="btn btn-info block" id="javascript_quiz">Take Java Quiz2</button>
+                    <button class="btn btn-info block" id="java_quiz2">Take Java Quiz2</button>
                 </div>
             </form>
         </div>
@@ -79,7 +79,7 @@
             </form>
         </div>
     </script>
-<!-- template for input 1-->
+<!-- template for input 1 question-->
     <script id="text_input_one" type="text/x-handlebars-template">
         <div class="container">
             <div>
@@ -98,7 +98,7 @@
             </div>
         </div>
     </script>
-<!-- template for input multiple-->
+<!-- template for input multiple anwsers-->
     <script id="text_input_multiple" type="text/x-handlebars-template">
         <div class="container">
             <div>
@@ -159,9 +159,9 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>That's not quite right.</h2>
+                    <h2>Im  sorry thats inncorrect.</h2>
                     <p>The correct answer is <span id="right_answer"></span>.</p>
-                    <h3>Explanation:</h3>
+                    <h3>reasoning:</h3>
                     <p>{{explanation}}</p>
                     <button id="got_it" class="btn btn-success">Got It</button>
                 </div>
@@ -176,7 +176,7 @@
                     <table class="table table-sm">
                         <tr>
                             <th>Score out of 100:</th>
-                            <th>Time Elapsed:</th>
+                            <th>Time:</th>
                             <th>Questions Answered:</th>
                         </tr>
                         <tr>
@@ -195,7 +195,7 @@
             <h3>{{this.message}}</h3>
             <div class="row center">
                 <button data-action="return_home" class="btn btn-success mr-sm-2">Return Home</button>
-                <button data-action="retake_quiz" class="btn btn-warning">Take Quiz Again</button>
+                <button data-action="retake_quiz" class="btn btn-warning">Retry the Quiz </button>
             </div>
         </div>
     </script>
