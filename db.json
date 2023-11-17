@@ -1,0 +1,128 @@
+{
+  "java_quiz": [
+      {
+          "id": "java_quiz_question1",
+          "quizType": "Java Quiz",
+          "questionType": "true_false",
+          "questionText": "Java is a programming language that is object oriented.",
+          "correctAnswer": "True",
+          "options": ["True", "False"],
+          "explanation": "Java is a general-purpose, class-based, and object-oriented programming language."
+      },
+      {
+          "id": "java_quiz_question2",
+          "quizType": "Java Quiz",
+          "questionType": "multiple_choice",
+          "questionText": "Which statement would you use to print the string \"stripey\" in Java?",
+          "correctAnswer": "System.out.println(\"stripey\")",
+          "options":["console.log(\"stripey\")", "Console.WriteLine(\"stripey\")", "System.out.println(\"stripey\")", "print('stripey')"],
+          "explanation": "If one wishes to print using java, you use the iconic System.out.println() method "
+      },
+      {
+        "id": "java_quiz_question3",
+        "quizType": "Java Quiz",
+        "questionType": "text_input_multiple",
+        "questionText": "There are three types of loops you can use in Java. One is a for loop. What are the names of the other two kinds of loops one can encounter?",
+        "correctAnswer": ["do-while", "while"],
+        "answerFieldOneId": "first_answer",
+        "answerFieldTwoId": "second_answer",
+        "explanation": "The other two kinds of loops are the do-while and the while loops.(tried to trick u with 2 similar)"
+    },
+      
+      {
+          "id": "java_quiz_question4",
+          "quizType": "Java Quiz",
+          "questionType": "text_input_one",
+          "questionText": "What Java statement do you need to find the 7?",
+          "correctAnswer": "Math.sqrt(7)",
+          "answerFieldId": "answer_to_question",
+          "explanation": "To find the square root of any numberin Java, one way is to use the Math.sqrt() method."
+      }, 
+      
+      {
+        "id": "java_quiz_question5",
+        "quizType": "Java Quiz",
+        "questionType": "image_selection",
+        "questionText": "Which code block will print the phrase \"aaa\"? Click the image showing the correct code block below.",
+        "correctAnswer": "img_2",
+        "options": [
+            {
+                "id": "img_1",
+                "source": ""
+            }, 
+            {
+                "id": "img_2",
+                "source": ""
+            }
+        ],
+        "explanation": "In the 2nd image, the loop iterates three times (i = 0, i = 1, i = 2). Once i = 3, the loop stops. In the first image, the loop continues until i > 3, so it executes four times (i = 0, i = 1, i = 2, i = 3)."
+    },
+    {
+      "id": "java_quiz_question6",
+      "quizType": "Java Quiz",
+      "questionType": "text_input_multiple",
+      "questionText": "what are 2 access modifiers used in Java(dont worry there are 4 you can think of).",
+      "correctAnswer": ["public", "private", "protected", "default"],
+      "answerFieldOneId": "first_answer",
+      "answerFieldTwoId": "second_answer",
+      "explanation": "The four access modifiers in Java are public, private, protected, and default."
+    },
+    {
+        "id": "java_quiz_question7",
+        "quizType": "Java Quiz",
+        "questionType": "true_false",
+        "questionText": " An Overridden method is a type of method with the same name that have different parameters.",
+        "correctAnswer": "False",
+        "options": ["True", "False"],
+        "explanation": "A method that has the same name but different parameters are called overloaded methods. An Overridden method are actually inherited from a superclass with different functionality than in the superclass it is in."
+    },
+    {
+        "id": "java_quiz_question8",
+        "quizType": "Java Quiz",
+        "questionType": "text_input_one",
+        "questionText": "what are the ony possible values for booleans .",
+            "correctAnswer": "true or false",
+            "answerFieldId": "answer_to_question",
+            "explanation": " Booleans are fundamental for making decisions in programming through conditional statements and loops. They only are true or false.;"
+        },
+        {
+            "id": "java_quiz_question9",
+            "quizType": "Java Quiz",
+            "questionType": "text_input_multiple",
+            "questionText": "What are the two most common types used in Java coding to store numbers?",
+            "correctAnswer": ["double", "int"],
+            "answerFieldOneId": "first_answer",
+            "answerFieldTwoId": "second_answer",
+            "explanation": "Java has many ways for storing numbers. However, the most common types used by most java coders are int and double."
+        },
+        {
+            "id": "java_quiz_question10",
+            "quizType": "Java Quiz",
+            "questionType": "image_selection",
+            "questionText": "Which of the following code snippets correctly initializes an array of integers in Java?",
+            "correctAnswer": "img_2",
+            "options": [
+                {
+                    "id": "img_1",
+                    "source": ""
+                  }, 
+                {
+                    "id": "img_2",
+                    "source": ""
+                }
+            ],
+            "explanation": " In Java, to initialize an array of integers, the correct syntax is to use square brackets [] after the data type. Image 1 has the brackets in the wrong place so it wouldn't run properly."
+        },
+        
+      {
+        "id": "java_quiz_question11",
+        "quizType":"Java Quiz",
+        "questionType":"multiple_choice",
+        "questionText": "What would be the correct syntax for creating an object of the Ball class named basketball?",
+        "correctAnswer": "Ball basketball = new Ball();",
+        "options": ["new Ball(basketball);", "basketball = Object.create(Ball);", "Ball.newInstance(basketball);", "Ball basketball = new Ball();"],
+        "explanation": "To create an instance of a class in Java, the correct syntax is: ClassName name = new ClassName();. In this case, since the name of the object is \"basketball\" and the name of the class is \"Ball\" the correct syntax is Ball basketball = new Ball();"
+    }
+  ]
+}
+      
