@@ -87,7 +87,7 @@ function handle_widget_event(e) {
                         check_answer(choiceSelected);
                     }
                     else {
-                        alert("Please choose an anwser before submitting.");
+                        alert("Please choose an anwser before submitting. even if you dont know, it always worth a guess.");
                     }
                     break;
                 }
