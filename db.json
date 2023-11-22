@@ -133,11 +133,11 @@
     "options": [
         {
             "id": "img_1",
-            "source": ""
+            "source": "https://github.com/AlexanderFox1/Web-proj3/blob/main/images%20for%20quiz/q12%20img%201.png"
         }, 
         {
             "id": "img_2",
-            "source": ""
+            "source": "https://github.com/AlexanderFox1/Web-proj3/blob/main/images%20for%20quiz/q12%20q2.png?raw=true"
         }
     ],
     "explanation": "The second image causes a runtime error. The first image's compiler won't be able to compile the code and will display a compiler error."
